@@ -1,0 +1,21 @@
+.card {
+    margin-bottom: 4rem;
+}
+
+.content {
+    display: block;
+    margin: 0 4rem;
+}
+
+.content:hover {
+    text-decoration: underline;
+}
+
+.name {
+    margin-bottom: 2rem;
+}
+
+.utils {
+    width: calc(100% - 8rem);
+    margin: 0 4rem;
+}

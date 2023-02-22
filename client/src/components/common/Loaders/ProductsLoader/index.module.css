@@ -1,0 +1,45 @@
+@keyframes loading {
+    0% {
+        background: var(--gray-02);
+    }
+
+    50% {
+        background: var(--gray-03);
+    }
+}
+
+.wrp {
+    padding: 4.4rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10rem -4rem;
+}
+
+.img {
+    height: 40rem;
+    background: var(--gray-02);
+    animation: loading 3s ease-in-out infinite;
+}
+
+.text,
+.short {
+    height: 2.5rem;
+    margin: 2rem 0;
+    background: var(--gray-02);
+    animation: loading 3s ease-in-out infinite;
+}
+
+.short {
+    width: 50%;
+}
+
+.empty {
+    padding: 15rem 5rem;
+    margin-bottom: 15rem;
+    background: var(--gray-02);
+    border-radius: var(--radius);
+    text-align: center;
+}

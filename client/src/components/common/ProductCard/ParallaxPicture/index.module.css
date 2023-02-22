@@ -1,0 +1,60 @@
+.wrp {
+    position: relative;
+    padding: 4rem 4rem 2rem;
+    height: 60rem;
+    width: 100%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: 0.2s;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+}
+
+.inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--backdrop);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.wrp:hover .inner::before,
+.wrp:hover .btn {
+    opacity: 1;
+}
+
+.parallax {
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: 0.2s;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--gray-02);
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(100px);
+    height: 6rem;
+    width: 6rem;
+    background: var(--gray-01);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+}
